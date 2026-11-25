@@ -83,3 +83,17 @@ Hər klipin son kadrı `kNN_last.png` kimi çıxarılır (ffmpeg `-sseof -0.1`).
 | k04 | `3bcdd885-6735-4a57-be8c-4b4fe74412dd` | https://d8j0ntlcm91z4.cloudfront.net/user_3HqnT53CLO0uoILUhrKkx9491ks/hf_20261125_213314_3bcdd885-6735-4a57-be8c-4b4fe74412dd.mp4 |
 | k05 | `0ef7dccb-da2b-425e-a6ce-720e1e4a3dde` | https://d8j0ntlcm91z4.cloudfront.net/user_3HqnT53CLO0uoILUhrKkx9491ks/hf_20261125_213314_0ef7dccb-da2b-425e-a6ce-720e1e4a3dde.mp4 |
 | k26 | `77e7fe4a-8d31-4abb-9006-16e43f9ad520` | https://d8j0ntlcm91z4.cloudfront.net/user_3HqnT53CLO0uoILUhrKkx9491ks/hf_20261125_213340_77e7fe4a-8d31-4abb-9006-16e43f9ad520.mp4 |
+
+## Buheyra və Əbu Talib — istifadəçinin öz səsi (səs çevirmə)
+
+ElevenLabs səsləri (Harrison, Gideon) vurğuya görə əvəz olundu. İstifadəçi 8 sətri özü oxudu (bir m4a faylı),
+sətirlər pauzalara görə kəsildi və Higgsfield `voice_change` ilə tembr dəyişdirildi (vurğu və intonasiya istifadəçinindir).
+Səhnələr 10, 14, 16, 20, 22, 24, 25 (Buheyra) və 21 (Əbu Talib) üçün `public/voice/vNN.mp3` bu fayllardan kəsilib.
+Kəsmə yerləri: `audio/rec_offsets.txt` (səhnə, başlanğıc, müddət — saniyə).
+
+| Rol | Hədəf səs | Giriş media_id | Nəticə job ID | Link |
+|---|---|---|---|---|
+| Buheyra | Alistair (preset) | `091904d2-e838-41f7-b630-6f1d4524cdcf` | `c5b0cc31-1ed5-42f0-8a28-0183aa76a364` | https://d8j0ntlcm91z4.cloudfront.net/user_3HqnT53CLO0uoILUhrKkx9491ks/hf_20261125_220736_c5b0cc31-1ed5-42f0-8a28-0183aa76a364.mp4 |
+| Əbu Talib | Orion (preset) | `0b602f73-5f9a-41ae-863a-d1698a1ebff7` | `c713f620-3f9b-47af-bc6c-45d30860d667` | https://d8j0ntlcm91z4.cloudfront.net/user_3HqnT53CLO0uoILUhrKkx9491ks/hf_20261125_220741_c713f620-3f9b-47af-bc6c-45d30860d667.mp4 |
+
+Xərc: 6 kredit (hər iki çevirmə birlikdə).
