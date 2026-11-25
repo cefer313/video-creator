@@ -1,3 +1,7 @@
 node_modules/
 out/stills/
 *.log
+yanindaki-yer/clips/
+yanindaki-yer/build/
+yanindaki-yer/check/
+yanindaki-yer/audio_src/*.wav
