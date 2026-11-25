@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """«Yanındakı yer» üçün sintez səslər: musiqi (sakit dron + pianoya bənzər notlar),
-izdiham fonu, küçə gurultusu, telefon siqnalı, divar saatı, ayaq səsləri. Lisenziyasız, numpy ilə."""
+telefon siqnalı, telefon zəngi, divar saatı, qapı. Xışıltı olmasın deyə küy (noise) əsaslı səs yoxdur. Lisenziyasız, numpy ilə."""
 import numpy as np, wave, os
 SR = 48000
 rng = np.random.default_rng(7)
@@ -51,31 +51,6 @@ for d, g in [(0.05, .4), (0.11, .3), (0.23, .2), (0.37, .12)]:
     k = int(d*SR); rev[k:] += mus[:-k]*g
 save('music.wav', (mus + rev) * 0.9)
 
-# --- İzdiham fonu (Kəbə): rəngli küy + uzaq mızıltı
-def crowd(dur, amp):
-    n = int(dur*SR); x = rng.standard_normal(n)
-    x = lp_fast(x, 24) - lp_fast(x, 400)
-    mod = 1 + 0.3*np.sin(2*np.pi*0.3*np.arange(n)/SR + rng.random()*6)
-    return x * mod * amp
-save('crowd.wav', crowd(14, 0.9))
-
-# --- Ayaq səsləri (yalın ayaq, mərmər)
-def steps(dur, rate, amp):
-    n = int(dur*SR); y = np.zeros(n); tt = 0.2
-    while tt < dur - 0.2:
-        L = int(0.06*SR); e = np.exp(-np.arange(L)/SR*60)
-        b = lp_fast(rng.standard_normal(L), 6) * e * amp * (0.6+0.4*rng.random())
-        i = int(tt*SR); y[i:i+L] += b[:n-i]
-        tt += 1/rate * (0.8 + 0.4*rng.random())
-    return y
-save('steps.wav', steps(14, 5.0, 0.5))
-
-# --- Küçə gurultusu
-n = int(10*SR); x = rng.standard_normal(n)
-street = (lp_fast(x, 120) * 3 + (lp_fast(x, 10) - lp_fast(x, 60)) * 0.3)
-street *= 1 + 0.4*np.sin(2*np.pi*0.15*np.arange(n)/SR)
-save('street.wav', street * 0.6)
-
 # --- Telefon gözləmə siqnalı (uzun «tuuut»): 425 Hz, 1 s səs / 4 s sükut
 def ringback(dur, amp):
     n = int(dur*SR); tt = np.arange(n)/SR
@@ -100,16 +75,8 @@ for k in range(6):
     clk[i:i+L] += np.sin(2*np.pi*2500*np.arange(L)/SR) * np.exp(-np.arange(L)/SR*300) * (0.35 if k % 2 else 0.25)
 save('clock.wav', clk)
 
-# --- Xəstəxana dəhlizi fonu (zəif uğultu)
-n = int(25*SR); x = rng.standard_normal(n)
-hum = lp_fast(x, 300)*2 + np.sin(2*np.pi*60*np.arange(n)/SR)*0.01
-save('room.wav', hum * 0.5)
-
-# --- Qapı bağlanması + araba təkəri
-L = int(0.5*SR); tt = np.arange(L)/SR
-door = (lp_fast(rng.standard_normal(L), 40)*np.exp(-tt*12) + np.sin(2*np.pi*90*tt)*np.exp(-tt*20)*0.5)
-save('door.wav', door * 0.8)
-L = int(1.2*SR); tt = np.arange(L)/SR
-cart = lp_fast(rng.standard_normal(L), 15) * (0.5+0.5*np.sin(2*np.pi*9*tt)**2) * np.minimum(1, tt*5) * np.exp(-tt*1.2)
-save('cart.wav', cart * 0.6)
+# --- Qapı bağlanması: küysüz, yumşaq alçaq tonlu zərbə
+L = int(0.6*SR); tt = np.arange(L)/SR
+door = (np.sin(2*np.pi*70*tt) + 0.5*np.sin(2*np.pi*140*tt)) * np.exp(-tt*14) * np.minimum(1, tt*400)
+save('door.wav', door * 0.6)
 print('ok')
