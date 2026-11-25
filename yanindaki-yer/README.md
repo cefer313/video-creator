@@ -5,9 +5,11 @@ ağ libasda, yaşıl əbada və yaşıl çalmada görünür, üzü bütün kadrl
 insanlara səssizcə kömək edir: arabanı qaldırır, qapını açıq saxlayır, oturacaqda yer verir. Film duayla bitir.
 
 - **Fayl:** `out/yanindaki-yer.mp4`
-- **Müddət / format:** 60 san · 1080×1920 (9:16, Reels) · 24 fps · H.264 · −15 LUFS
+- **Müddət / format:** 60 san · 1080×1920 (9:16, Reels) · 24 fps · H.264 · −16,6 LUFS
 - **Səhnələr:** 1) Kəbənin önündə, 2) Qəzəbli adam, 3) Cavabsız zəng, 4) Xəstəxana otağı, 5) Yanındakı yer,
   6) Yenidən izdihamın içində, 7) Dua
+- **Üz:** `nur.py` hər kadrda üzü izləyib dəyirmi, tam örtüklü nurla örtür — üz cizgisi bilinmir.
+- **Səs:** musiqi, dialoqlar, telefon, saat, qapı; xışıltı verən küy əsaslı fon səsləri yoxdur.
 - **Altyazılar:** Inter şrifti; dialoqlar Azərbaycan dilində
 
 ## Yenidən render
