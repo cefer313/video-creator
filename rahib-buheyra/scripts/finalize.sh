@@ -6,3 +6,7 @@ ffmpeg -y -loglevel error -i out/raw.mp4 -c:v libx264 -preset slow -crf 19 -pix_
   -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 \
   -af loudnorm=I=-15:TP=-1.5:LRA=11 -c:a aac -b:a 192k -ar 48000 -movflags +faststart out/rahib-buheyra.mp4
 echo "out/rahib-buheyra.mp4 hazırdır"
+# Telefonlar üçün yüngül versiya (Main profil, level 4.0)
+ffmpeg -y -loglevel error -i out/rahib-buheyra.mp4 -c:v libx264 -preset slow -crf 24 -profile:v main -level 4.0 -pix_fmt yuv420p \
+  -maxrate 4M -bufsize 8M -c:a aac -b:a 128k -ar 44100 -movflags +faststart out/rahib-buheyra-telefon.mp4
+echo "out/rahib-buheyra-telefon.mp4 hazırdır"

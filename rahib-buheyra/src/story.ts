@@ -1,6 +1,6 @@
 // Ssenari: istifadəçinin "Dərs 3 — Rahib Buheyranın əhvalatı" mətnindən.
 // Hər səhnə: fon (art), ekran mətni, (varsa) danışan, müddət (saniyə).
-// Peyğəmbər (s) heç bir kadrda fiqur kimi çəkilmir — yalnız yumşaq nur (işıq) ilə işarə olunur.
+// Peyğəmbər (s) yalnız arxadan göstərilir, üzü heç bir kadrda görünmür (bax visuals.ts).
 
 export type Bg =
   | 'title'
@@ -143,5 +143,6 @@ export const SCENES: Scene[] = [
 import timing from './timing.json';
 
 export const hasVoice = (k: number) => timing.voice[k] ?? false;
+export const voiceDur = (k: number) => timing.vdur[k] ?? 0;
 export const sceneFrames = (k: number) => Math.round((timing.sec[k] ?? SCENES[k].sec) * FPS);
 export const TOTAL_FRAMES = SCENES.reduce((a, _s, k) => a + sceneFrames(k), 0);

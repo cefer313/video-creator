@@ -4,3 +4,5 @@ out/stills/
 public/music.wav
 *.log
 public/voice/
+public/img/
+public/clips/
