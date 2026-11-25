@@ -15,3 +15,4 @@ Reklam və Reels videoları, təqdimatlar, animasiya filmləri.
 | Xidmət təqdimatı | Çəkiliş/montaj xidmətləri, paketlər, qadın diktor | 90 san · 1080×1920 | [video-teqdimat/](video-teqdimat/) (`out/teqdimat.mp4`) |
 | Mühasibatlıq təlimi — Reels | Gənc mühasib qadın, reklam | 58 san · 1080×1920 | [video-teqdimat/](video-teqdimat/) (`out/muhasib-reels.mp4`) |
 | Əl çalma — qəhrəman kostyumu | Klapla geyim qara qəhrəman kostyumuna çevrilir | 9,4 san · 1080×1920 | [batman-el-calma/](batman-el-calma/) |
+| Yanındakı yer | İmam Mehdi (ə.f.) insanlara səssizcə kömək edir, Kəbə önündə dua (3D animasiya) | 60 san · 1080×1920 | [yanindaki-yer/](yanindaki-yer/) |

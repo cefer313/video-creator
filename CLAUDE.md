@@ -66,7 +66,7 @@ Bu fayldakı qaydalara hər söhbətdə əməl et.
 Siyahı kök `README.md`-dədir. Qeydlər:
 - `kufa-night/`, `unknown-benefactor/` — AI klipləri `cefer313/iphone` repozitoriyasında, `claude/confident-cray-07o93z` budağında qalır (bax `SOURCES.md`). O budaq silinməməlidir.
 - `video-teqdimat/` — bir Remotion layihəsində iki kompozisiya: `Teqdimat` (xidmət təqdimatı) və `MuhasibReels`. Mətnlər: `src/config.ts`, `src/reels/content.ts`.
-- `a-prayer-for-the-ummah/`, `mescidde-secde-dua/` — ffmpeg montajı (`assemble.sh`), klip linkləri `SOURCES.md`-də.
+- `a-prayer-for-the-ummah/`, `mescidde-secde-dua/`, `yanindaki-yer/` — ffmpeg montajı (`assemble.sh`), klip linkləri `SOURCES.md`-də.
 - `iphone` repozitoriyasının köhnə budaqlarında hələ qalanlar: `claude/affectionate-mendel-jg05c6` (stresli mühasib videosu), `claude/lucid-euler-usi4ww` (mühasib promo videosu; orada gündəlik və üzlüklər də var).
 
 ## Yeni qaydalar
