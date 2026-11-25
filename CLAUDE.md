@@ -59,13 +59,13 @@ Bu fayldakı qaydalara hər söhbətdə əməl et.
 - Higgsfield fayllarını endirmək/yükləmək üçün "iphone" bulud mühiti lazımdır (orada `d8j0ntlcm91z4.cloudfront.net`, `upload.higgsfield.ai` açıqdır). Başqa mühitdə bloklansa, istifadəçiyə de və ya mühiti dəyiş.
 - Render üçün Chromium: `/opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell`.
 
-## Mövcud videolar (hələ `iphone` repozitoriyasında)
+## Mövcud videolar
 
-İstifadəçi istəsə bu repozitoriyaya köçür:
-- `iphone/videolar/` — 5 hazır video: "A Prayer for the Ummah", məsciddə səcdə, "The Weight of Compassion", "Unknown Benefactor", "Kufa Night".
-- `iphone/video-teqdimat/` — Remotion layihəsi: xidmət təqdimatı videosu və mühasibatlıq Reels reklamı.
-- Film mənbələri (`film/`, `film-ai/`, `film-kufa/`, `film3d/`) — `iphone`, budaq `claude/confident-cray-07o93z`.
-- Digər köhnə işlər — `iphone`, budaqlar `claude/affectionate-mendel-jg05c6` (mühasib videosu), `claude/lucid-euler-usi4ww` (mühasib promo videosu, gündəlik, üzlüklər).
+Siyahı kök `README.md`-dədir. Qeydlər:
+- `kufa-night/`, `unknown-benefactor/` — AI klipləri `cefer313/iphone` repozitoriyasında, `claude/confident-cray-07o93z` budağında qalır (bax `SOURCES.md`). O budaq silinməməlidir.
+- `video-teqdimat/` — bir Remotion layihəsində iki kompozisiya: `Teqdimat` (xidmət təqdimatı) və `MuhasibReels`. Mətnlər: `src/config.ts`, `src/reels/content.ts`.
+- `a-prayer-for-the-ummah/`, `mescidde-secde-dua/` — ffmpeg montajı (`assemble.sh`), klip linkləri `SOURCES.md`-də.
+- `iphone` repozitoriyasının köhnə budaqlarında hələ qalanlar: `claude/affectionate-mendel-jg05c6` (stresli mühasib videosu), `claude/lucid-euler-usi4ww` (mühasib promo videosu; orada gündəlik və üzlüklər də var).
 
 ## Yeni qaydalar
 
@@ -77,3 +77,4 @@ Bu fayldakı qaydalara hər söhbətdə əməl et.
 ### Əlavə olunmuş qaydalar (tarixlə)
 
 - 2026-11-25 — Bu fayl yaradıldı; qaydalar əvvəlki video işlərindən toplandı.
+- 2026-11-25 — Bütün videolar və video layihələri `iphone`-dan köçürüldü.

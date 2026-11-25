@@ -4,4 +4,13 @@ Reklam və Reels videoları, təqdimatlar, animasiya filmləri.
 
 ## Videolar
 
-_Hələ video yoxdur._
+| Video | Nədir | Müddət / format | Qovluq |
+|---|---|---|---|
+| A Prayer for the Ummah | Bazar səhnəsi və dua (3D animasiya) | 30 san · 1920×1080 | [a-prayer-for-the-ummah/](a-prayer-for-the-ummah/) |
+| Məsciddə səcdə | Oğlan səcdədə dua edir | 12,5 san · 1920×1080 | [mescidde-secde-dua/](mescidde-secde-dua/) |
+| Kufa Night | Gecə Kufə küçəsində gizli xeyirxahlıq | 20 san · 1280×720 | [kufa-night/](kufa-night/) |
+| Unknown Benefactor | Naməlum xeyirxah | 20 san | [unknown-benefactor/](unknown-benefactor/) |
+| The Weight of Compassion | Remotion ilə çəkilmiş film | 30 san | [the-weight-of-compassion/](the-weight-of-compassion/) |
+| Film 3D (Blender) | Blender layihəsi, hazır video yoxdur | — | [film3d-blender/](film3d-blender/) |
+| Xidmət təqdimatı | Çəkiliş/montaj xidmətləri, paketlər, qadın diktor | 90 san · 1080×1920 | [video-teqdimat/](video-teqdimat/) (`out/teqdimat.mp4`) |
+| Mühasibatlıq təlimi — Reels | Gənc mühasib qadın, reklam | 58 san · 1080×1920 | [video-teqdimat/](video-teqdimat/) (`out/muhasib-reels.mp4`) |
