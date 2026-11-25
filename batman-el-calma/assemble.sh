@@ -10,9 +10,9 @@ mkdir -p out
 ffmpeg -y -i "$SRC" -i "$AI" -filter_complex "
 [0:v]trim=0:${CUT},setpts=PTS-STARTPTS,fps=30,scale=1080:1920:flags=lanczos,setsar=1[a];
 [1:v]fps=30,scale=1080:1920:flags=lanczos,setsar=1,setpts=PTS-STARTPTS[b0];
-[b0]trim=0:5.2,setpts=PTS-STARTPTS[b];
+[b0]setpts=PTS-STARTPTS[b];
 [a][b]concat=n=2:v=1:a=0,
- geq=lum='lum(X,Y)+255*0.9*max(0,1-abs(T-${CUT})/0.12)':cb='cb(X,Y)':cr='cr(X,Y)'[v];
-[0:a]loudnorm=I=-15:TP=-1.5:LRA=11[aud]" \
+ geq=lum='clip(lum(X,Y)+235*max(0,1-abs(T-${CUT})/0.12),0,255)':cb='cb(X,Y)':cr='cr(X,Y)'[v];
+[0:a]loudnorm=I=-15:TP=-1.5:LRA=11,volume=2dB,alimiter=limit=0.8:level=disabled[aud]" \
  -map "[v]" -map "[aud]" -c:v libx264 -crf 18 -preset slow -pix_fmt yuv420p \
  -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart out/batman-el-calma.mp4

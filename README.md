@@ -14,3 +14,4 @@ Reklam və Reels videoları, təqdimatlar, animasiya filmləri.
 | Film 3D (Blender) | Blender layihəsi, hazır video yoxdur | — | [film3d-blender/](film3d-blender/) |
 | Xidmət təqdimatı | Çəkiliş/montaj xidmətləri, paketlər, qadın diktor | 90 san · 1080×1920 | [video-teqdimat/](video-teqdimat/) (`out/teqdimat.mp4`) |
 | Mühasibatlıq təlimi — Reels | Gənc mühasib qadın, reklam | 58 san · 1080×1920 | [video-teqdimat/](video-teqdimat/) (`out/muhasib-reels.mp4`) |
+| Əl çalma — qəhrəman kostyumu | Klapla geyim qara qəhrəman kostyumuna çevrilir | 9,4 san · 1080×1920 | [batman-el-calma/](batman-el-calma/) |

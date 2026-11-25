@@ -1,7 +1,7 @@
-# Əl çalma ilə geyim dəyişmə
+# Əl çalma ilə qəhrəman kostyumu
 
-Oğlan əl çalır, klap anında (~4,35 san) geyimi qəhrəman kostyumuna çevrilir.
+Oğlan əl çalır və klap anında (~4,35 san) işıq çaxır, yaşıl sviteri qara zirehli qəhrəman kostyumuna (plaşla) çevrilir.
+Batman kostyumu Higgsfield tərəfindən müəllif hüququna görə rədd edildi, ona görə də emblemsiz öz kostyumumuzdan istifadə olunub.
 
-- Mənbə: istifadəçinin videosu (9,6 san, 720×1280), çıxış 1080×1920.
-- Montaj: `./assemble.sh <orijinal.MOV> <ai_hisse.mp4>` → `out/batman-el-calma.mp4`.
-- Status: **gözləmədədir** — Higgsfield Batman kostyumunu müəllif hüququna görə rədd etdi; kostyum seçimi gözlənilir.
+- Hazır video: `out/batman-el-calma.mp4`: 9,4 san, 1080×1920, 30 fps, H.264, səs ~−16 LUFS.
+- Montaj: `./assemble.sh <orijinal.MOV> <ai_hisse.mp4>`. AI hissəsinin linki `SOURCES.md`-dədir.
