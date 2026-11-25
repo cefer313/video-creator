@@ -52,6 +52,8 @@ Bu fayldakı qaydalara hər söhbətdə əməl et.
   - səcdə: alın, burun, ovuclar, dizlər, ayaq barmaqları yerdə; dirsəklər yerdən yuxarı;
   - dua: ovuclar yuxarı, sinə qarşısında (təkbir duruşu ilə qarışdırma).
 - Müqəddəs şəxslər (məs. İmam Mehdi) göstəriləndə **üz heç bir kadrda görünmür**: yalnız düz arxadan və ya əllərin yaxın planı; profil, əks, kölgə, parlayan üz də olmaz. Hər kadrı yoxla.
+  - İstisna: istifadəçi özü nurlu üzlü istinad şəkli verib onu istəyəndə (məs. `yanindaki-yer/`) üz tam isti nurla örtülür,
+    heç bir cizgi (göz, burun, ağız, saqqal) görünmür; yan/arxa rakurs olar, düz qabaqdan yaxın plan olmaz. Hər kadrı yenə yoxla.
 - Bədii təsəvvür səhnələri tarixi rəvayət kimi təqdim edilmir.
 
 ## Mühit
@@ -78,3 +80,4 @@ Siyahı kök `README.md`-dədir. Qeydlər:
 
 - 2026-11-25 — Bu fayl yaradıldı; qaydalar əvvəlki video işlərindən toplandı.
 - 2026-11-25 — Bütün videolar və video layihələri `iphone`-dan köçürüldü.
+- 2026-11-25 — Müqəddəs şəxsin üzü üçün istisna: istifadəçinin öz nurlu istinad şəkli olanda nurla tam örtülmüş üz olar («Yanındakı yer»).
