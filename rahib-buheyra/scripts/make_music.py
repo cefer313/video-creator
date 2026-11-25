@@ -6,8 +6,8 @@ import re, subprocess, wave, os
 import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-story = open(os.path.join(ROOT, 'src/story.ts'), encoding='utf8').read()
-secs = sum(round(float(x) * 30) for x in re.findall(r'sec:\s*([0-9.]+)', story)) / 30
+import json
+secs = sum(round(x * 30) for x in json.load(open(os.path.join(ROOT, 'src/timing.json')))['sec']) / 30
 SR = 48000
 N = int(secs * SR) + SR
 t = np.arange(N) / SR

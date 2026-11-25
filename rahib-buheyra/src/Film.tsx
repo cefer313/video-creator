@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { Background } from './art/scenes';
-import { SCENES, sceneFrames, TOTAL_FRAMES, type Scene } from './story';
+import { SCENES, sceneFrames, hasVoice, TOTAL_FRAMES, type Scene } from './story';
 
 const XF = 15; // keçid (crossfade) kadrları
 const FONT = 'Montserrat, sans-serif';
@@ -132,13 +132,18 @@ export const Film: React.FC = () => {
   const frame = useCurrentFrame();
   let start = 0;
   const seqs = SCENES.map((s, k) => {
-    const dur = sceneFrames(s);
+    const dur = sceneFrames(k);
     const from = k === 0 ? 0 : start - XF;
     const len = k === 0 ? dur : dur + XF;
     start += dur;
     return (
       <Sequence key={k} from={from} durationInFrames={len} layout="none">
         <SceneView s={s} k={k} dur={len} first={k === 0} />
+        {hasVoice(k) && (
+          <Sequence from={k === 0 ? 40 : XF + 8} layout="none">
+            <Audio src={staticFile(`voice/v${String(k).padStart(2, '0')}.mp3`)} volume={1} />
+          </Sequence>
+        )}
       </Sequence>
     );
   });
@@ -146,7 +151,7 @@ export const Film: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
       <AbsoluteFill style={{ opacity: endFade }}>{seqs}</AbsoluteFill>
-      <Audio src={staticFile('music.wav')} />
+      <Audio src={staticFile('music.wav')} volume={0.28} />
     </AbsoluteFill>
   );
 };

@@ -139,5 +139,9 @@ export const SCENES: Scene[] = [
   { bg: 'end', text: '', sec: 6 },
 ];
 
-export const sceneFrames = (s: Scene) => Math.round(s.sec * FPS);
-export const TOTAL_FRAMES = SCENES.reduce((a, s) => a + sceneFrames(s), 0);
+// Diktor səsinə görə hesablanmış müddətlər (scripts/timing.py yaradır)
+import timing from './timing.json';
+
+export const hasVoice = (k: number) => timing.voice[k] ?? false;
+export const sceneFrames = (k: number) => Math.round((timing.sec[k] ?? SCENES[k].sec) * FPS);
+export const TOTAL_FRAMES = SCENES.reduce((a, _s, k) => a + sceneFrames(k), 0);
