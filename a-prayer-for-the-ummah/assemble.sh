@@ -2,11 +2,12 @@
 # "A Prayer for the Ummah" — 30 san, 1920x1080, 24 fps montajı
 set -euo pipefail
 cd "$(dirname "$0")"
-V=${VOICE:-voiceB.mp3}
+# Kliplər clips/ qovluğunda, səslər audio_src/ qovluğunda olmalıdır (bax SOURCES.md)
+V=${VOICE:-audio_src/voiceB.mp3}
 
 ffmpeg -v error -y \
-  -i c1.mp4 -i c2.mp4 -i c3.mp4 -i c4.mp4 -i c5.mp4 -i c6.mp4 \
-  -i sfx_amb.mp3 -i sfx_paper.mp3 -i sfx_coins.mp3 -i sfx_steps.mp3 -i sfx_cloth.mp3 -i "$V" \
+  -i clips/c1.mp4 -i clips/c2.mp4 -i clips/c3.mp4 -i clips/c4.mp4 -i clips/c5.mp4 -i clips/c6.mp4 \
+  -i audio_src/sfx_amb.mp3 -i audio_src/sfx_paper.mp3 -i audio_src/sfx_coins.mp3 -i audio_src/sfx_steps.mp3 -i audio_src/sfx_cloth.mp3 -i "$V" \
   -filter_complex "\
 [0:v]trim=duration=4,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,fps=24,setsar=1[v1];\
 [1:v]trim=duration=6,setpts=PTS-STARTPTS,scale=1920:1080:flags=lanczos,fps=24,setsar=1[v2];\
@@ -25,6 +26,6 @@ ffmpeg -v error -y \
 [amb][paper][coins][steps][cloth][voice]amix=inputs=6:normalize=0:duration=longest,atrim=0:30,afade=out:st=29.3:d=0.7,loudnorm=I=-16:TP=-1.5:LRA=11[a]" \
   -map "[v]" -map "[a]" -t 30 -r 24 \
   -c:v libx264 -profile:v high -crf 17 -preset slow -pix_fmt yuv420p \
-  -c:a aac -b:a 192k -ar 48000 -movflags +faststart ummah-dua.mp4
+  -c:a aac -b:a 192k -ar 48000 -movflags +faststart out/a-prayer-for-the-ummah.mp4
 
-ffprobe -v error -show_entries format=duration -show_entries stream=codec_name,width,height,r_frame_rate -of default=nw=1 ummah-dua.mp4
+ffprobe -v error -show_entries format=duration -show_entries stream=codec_name,width,height,r_frame_rate -of default=nw=1 out/a-prayer-for-the-ummah.mp4
