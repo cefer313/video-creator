@@ -5,7 +5,7 @@ Mətn istifadəçinin «Dərs 3» sənədindən götürülüb (bəzi cümlələr
 
 - Fayl: `out/rahib-buheyra.mp4`
 - Format: 1080×1920 (9:16), 30 fps, H.264 `yuv420p`, `+faststart`, AAC, səs −15 LUFS
-- Müddət: ~3 dəq 6 san, 28 səhnə (müddətlər diktor səsinə görə — `scripts/timing.py` → `src/timing.json`)
+- Müddət: ~3 dəq 15 san, 28 səhnə (müddətlər diktor səsinə görə — `scripts/timing.py` → `src/timing.json`)
 - Görüntü: 22 AI rəsm kadrı (`gpt_image_2_6`) + 5 hərəkətli Kling 3.0 Pro klipi, Remotion-da kamera
   hərəkəti, toz, işıq və karaoke altyazı ilə yığılıb. Səs: rollara görə ElevenLabs diktorları. Bax `SOURCES.md`.
 - Xərc: ~86 Higgsfield krediti (səslər ~8, kadrlar ~29, klipler ~44, səs çevirmə 6).
