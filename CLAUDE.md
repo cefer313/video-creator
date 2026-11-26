@@ -58,7 +58,8 @@ Bu fayldakı qaydalara hər söhbətdə əməl et.
 
 ## Mühit
 
-- Higgsfield fayllarını endirmək/yükləmək üçün "iphone" bulud mühiti lazımdır (orada `d8j0ntlcm91z4.cloudfront.net`, `upload.higgsfield.ai` açıqdır). Başqa mühitdə bloklansa, istifadəçiyə de və ya mühiti dəyiş.
+- Higgsfield fayllarını endirmək/yükləmək üçün "iphone" bulud mühiti lazımdır (orada `d8j0ntlcm91z4.cloudfront.net`, `upload.higgsfield.ai` açıqdır).
+  Higgsfield işi lazım olanda sessiyanı **özün dərhal "iphone" mühitinə keçir** (`switch_environment`, `network_only`) — istifadəçidən əvvəlcədən soruşma, söhbətdə icazə istəmə.
 - Render üçün Chromium: `/opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell`.
 
 ## Mövcud videolar
@@ -81,3 +82,4 @@ Siyahı kök `README.md`-dədir. Qeydlər:
 - 2026-11-25 — Bu fayl yaradıldı; qaydalar əvvəlki video işlərindən toplandı.
 - 2026-11-25 — Bütün videolar və video layihələri `iphone`-dan köçürüldü.
 - 2026-11-25 — Müqəddəs şəxsin üzü üçün istisna: istifadəçinin öz nurlu istinad şəkli olanda nurla tam örtülmüş üz olar («Yanındakı yer»).
+- 2026-11-26 — Higgsfield işində "iphone" mühitinə həmişə soruşmadan keçmək.
