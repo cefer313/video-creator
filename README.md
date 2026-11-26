@@ -17,3 +17,4 @@ Reklam və Reels videoları, təqdimatlar, animasiya filmləri.
 | Əl çalma — qəhrəman kostyumu | Klapla geyim qara qəhrəman kostyumuna çevrilir | 9,4 san · 1080×1920 | [batman-el-calma/](batman-el-calma/) |
 | Yanındakı yer | İmam Mehdi (ə.f.) insanlara səssizcə kömək edir, Kəbə önündə dua (3D animasiya) | 60 san · 1080×1920 | [yanindaki-yer/](yanindaki-yer/) |
 | Rahib Buheyranın əhvalatı | Peyğəmbərin (s) uşaqlığı: Şam səfəri və rahib Buheyra (AI rəsm kadrları + Kling klipləri, Remotion montajı, rollara görə diktor) | 3 dəq 15 san · 1080×1920 | [rahib-buheyra/](rahib-buheyra/) |
+| Harun ər-Rəşidin taxt otağı | İstifadəçinin otaq videosu AI ilə Abbasi xəlifəsinin taxt otağına çevrilib | 6,5 san · 1920×1080 | [harun-er-resid-taxt-otagi/](harun-er-resid-taxt-otagi/) |
