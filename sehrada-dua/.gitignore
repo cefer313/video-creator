@@ -1,0 +1,6 @@
+node_modules/
+out/raw.mp4
+out/stills/
+public/music.wav
+public/voice_clean.wav
+*.log
