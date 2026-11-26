@@ -18,3 +18,4 @@ Reklam və Reels videoları, təqdimatlar, animasiya filmləri.
 | Yanındakı yer | İmam Mehdi (ə.f.) insanlara səssizcə kömək edir, Kəbə önündə dua (3D animasiya) | 60 san · 1080×1920 | [yanindaki-yer/](yanindaki-yer/) |
 | Rahib Buheyranın əhvalatı | Peyğəmbərin (s) uşaqlığı: Şam səfəri və rahib Buheyra (AI rəsm kadrları + Kling klipləri, Remotion montajı, rollara görə diktor) | 3 dəq 15 san · 1080×1920 | [rahib-buheyra/](rahib-buheyra/) |
 | Harun ər-Rəşidin taxt otağı | İstifadəçinin otaq videosu AI ilə Abbasi xəlifəsinin taxt otağına çevrilib | 6,5 san · 1920×1080 | [harun-er-resid-taxt-otagi/](harun-er-resid-taxt-otagi/) |
+| Bir stəkan su | Oğlan hamıya su verən İmam Mehdiyə (ə.f.) su süzür; dialoqsuz 3D animasiya (Kling klipləri, Remotion montajı) | 30 san · 1920×1080 | [bir-stekan-su/](bir-stekan-su/) |
