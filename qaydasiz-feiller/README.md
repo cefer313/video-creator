@@ -6,7 +6,7 @@ təkrar, sonda test.
 
 - **Fayl:** `out/qaydasiz-feiller.mp4`
 - **Format:** 1920×1080 (16:9), 30 fps, H.264 `yuv420p`, `+faststart`, AAC, səs −15 LUFS
-- **Müddət:** ~12,6 dəq
+- **Müddət:** 12 dəq 35 san
 - **Səs:** azərbaycanca — Meta MMS, ingiliscə — Piper (açıq modellər, kreditsiz). Bax `SOURCES.md`.
 
 ## Hissələr
