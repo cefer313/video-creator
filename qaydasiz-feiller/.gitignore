@@ -1,0 +1,9 @@
+node_modules/
+out/raw.mkv
+out/chunks/
+out/check/
+out/grid/
+public/voice/
+public/mix.wav
+*.log
+__pycache__/
