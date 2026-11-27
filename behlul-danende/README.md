@@ -7,11 +7,11 @@ Bəhlul xəlifə Harun ər-Rəşidin boş taxtına oturur, keşikçilər onu dö
 
 - **Fayl:** `out/behlul-danende.mp4`
 - **Format:** 1080×1920 (9:16), 30 fps, H.264 `yuv420p`, `+faststart`, AAC, səs −15 LUFS
-- **Müddət:** ~78,9 san
+- **Müddət:** ~65,4 san
 - **Görüntü:** bütövlükdə kodla çəkilib: personajlar, saray, effektlər Remotion-da SVG ilə qurulub. AI krediti xərclənməyib.
-- **Səs:** istifadəçinin öz yazısı (intonasiya və vaxtlar onundur), tembri Higgsfield `voice_change` ilə diktor səslərinə çevrilib:
-  rəvayətçi — Desmond, Bəhlul — Harrison, Harun — Gideon. Yazı `scripts/import_recording.py` ilə cümlələrə bölünür,
-  rollar üzrə yığılıb çevrilir, `scripts/split_roles.py` yenidən cümlələrə bölür (`audio/role_offsets.json`). Xərc: 10 kredit.
+- **Səs:** ElevenLabs (`text2speech_v2`, Higgsfield vasitəsilə): rəvayətçi — Desmond, Bəhlul — Harrison, Harun — Gideon.
+  `scripts/fetch_elevenlabs.sh` faylları `audio/elevenlabs_files.txt`-dən endirir. Xərc: ~3,3 kredit.
+  Əvvəlki variantlar: Meta MMS (`scripts/make_voices.py`), istifadəçinin öz yazısı (`scripts/import_recording.py`, `scripts/split_roles.py`).
   Musiqi (hicaz məqamında ud-qaval, kədərli ney) və effektlər numpy ilə sintez olunub. İlk versiyada Meta MMS səsi idi (`scripts/make_voices.py` qalır).
 - Ekranda «RƏVAYƏT» yazılıb: bu, xalq arasında məşhur rəvayətin bədii təqdimatıdır.
 
@@ -50,7 +50,7 @@ Vaxtlar, altyazılar və dodaq hərəkəti yeni səsə görə özü uyğunlaşı
 
 ```bash
 npm install
-python3 scripts/import_recording.py <yazı.m4a>   # və ya MMS: MMS_DIR=~/models/mms-tts-azj python3 scripts/make_voices.py
+bash scripts/fetch_elevenlabs.sh   # ElevenLabs səsləri; və ya öz yazınız: python3 scripts/import_recording.py <yazı.m4a>; və ya MMS: MMS_DIR=~/models/mms-tts-azj python3 scripts/make_voices.py
 npm run assets   # src/timeline.json + public/mix.wav
 npm run render   # out/behlul-danende.mp4
 ```
