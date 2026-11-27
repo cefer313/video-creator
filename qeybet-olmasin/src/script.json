@@ -1,0 +1,96 @@
+{
+  "_qeyd": "Ssenari: «Qeybət olmasın, amma...». text = altyazı, tts = səsləndirmə üçün yazılış (lazım olanda). Mətni burada dəyiş, sonra: npm run voices && npm run assets",
+  "lines": [
+    {
+      "id": "t01",
+      "who": "tural",
+      "part": "wrong",
+      "text": "Qeybət olmasın, amma..."
+    },
+    {
+      "id": "t02",
+      "who": "tural",
+      "part": "wrong",
+      "text": "Samir imtahandan kəsilib. Evdə də deyib ki, “əla vermişəm”."
+    },
+    {
+      "id": "k01",
+      "who": "kenan",
+      "part": "wrong",
+      "text": "Ə, bu qeybətdir axı."
+    },
+    {
+      "id": "t03",
+      "who": "tural",
+      "part": "wrong",
+      "text": "Nə qeybət? Həqiqətdir! Mən bunu onun üzünə də deyərəm."
+    },
+    {
+      "id": "k02",
+      "who": "kenan",
+      "part": "wrong",
+      "text": "Hə?.. Bəs atası bilir?"
+    },
+    {
+      "id": "t04",
+      "who": "tural",
+      "part": "wrong",
+      "text": "Dayan, mənə atdığı səsli mesajı göndərim, özün qulaq as..."
+    },
+    {
+      "id": "t05",
+      "who": "tural",
+      "part": "wrong",
+      "text": "Samir! Qardaşım! Elə indi səni deyirdik — hamıdan yaxşı oğlansan!"
+    },
+    {
+      "id": "n01",
+      "who": "narrator",
+      "part": "explain",
+      "text": "Olur. Qeybət — mömin insanın gizli eybini onun olmadığı yerdə danışmaqdır. Doğru olsa belə."
+    },
+    {
+      "id": "n02",
+      "who": "narrator",
+      "part": "explain",
+      "text": "“Qeybət olmasın”, “həqiqətdir”, “üzünə də deyərəm” — bu üç bəhanə Ayətullah Sistaninin fətvasında tək-tək sadalanıb: heç biri qeybəti caiz etmir."
+    },
+    {
+      "id": "n03",
+      "who": "narrator",
+      "part": "explain",
+      "text": "Səsli mesajla, yazışmayla, hətta göz-qaş işarəsi ilə çatdırmaq da qeybətdir."
+    },
+    {
+      "id": "n04",
+      "who": "narrator",
+      "part": "explain",
+      "text": "Eşitdinsə — dostunu müdafiə et. Etmisənsə — tövbə et, onun üçün istiğfar et."
+    },
+    {
+      "id": "t06",
+      "who": "tural",
+      "part": "correct",
+      "text": "Qeybət olmasın, amma Samir..."
+    },
+    {
+      "id": "k03",
+      "who": "kenan",
+      "part": "correct",
+      "text": "Dayan. Samir burda yoxdur ki, özünü müdafiə etsin. Zəng edək ona."
+    },
+    {
+      "id": "t07",
+      "who": "tural",
+      "part": "correct",
+      "text": "Samir, qardaş, necəsən? Bir şey lazım olsa, buradayıq."
+    },
+    {
+      "id": "n05",
+      "who": "narrator",
+      "part": "end",
+      "text": "Faydalı oldusa — save et və paylaş.",
+      "tts": "Faydalı oldusa — seyv et və paylaş."
+    }
+  ]
+}

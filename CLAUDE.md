@@ -68,6 +68,7 @@ Siyahı kök `README.md`-dədir. Qeydlər:
 - `kufa-night/`, `unknown-benefactor/` — AI klipləri `cefer313/iphone` repozitoriyasında, `claude/confident-cray-07o93z` budağında qalır (bax `SOURCES.md`). O budaq silinməməlidir.
 - `video-teqdimat/` — bir Remotion layihəsində iki kompozisiya: `Teqdimat` (xidmət təqdimatı) və `MuhasibReels`. Mətnlər: `src/config.ts`, `src/reels/content.ts`.
 - `a-prayer-for-the-ummah/`, `mescidde-secde-dua/`, `yanindaki-yer/` — ffmpeg montajı (`assemble.sh`), klip linkləri `SOURCES.md`-də.
+- `qeybet-olmasin/` — kreditsiz 3D: Remotion + `@remotion/three` (personajlar kodla), səslər Meta MMS (`facebook/mms-tts-azj-script_latin`, CC BY-NC 4.0; "iphone" mühitində `huggingface.co` və `us.aws.cdn.hf.co` açıqdır, torch PyPI-dən), musiqi/effektlər numpy. Öz səsi üçün: `public/voice/<id>.wav` + `npm run assets && npm run render`.
 - `iphone` repozitoriyasının köhnə budaqlarında hələ qalanlar: `claude/affectionate-mendel-jg05c6` (stresli mühasib videosu), `claude/lucid-euler-usi4ww` (mühasib promo videosu; orada gündəlik və üzlüklər də var).
 
 ## Yeni qaydalar

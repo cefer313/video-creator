@@ -1,0 +1,29 @@
+{
+  "name": "qeybet-olmasin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "«Qeybət olmasın, amma...» — Baxışını dəyiş üçün 9:16 3D animasiya Reels (Remotion + Three.js, AI kreditsiz)",
+  "scripts": {
+    "voices": "python3 scripts/make_voices.py",
+    "assets": "python3 scripts/timing.py && python3 scripts/make_audio.py",
+    "studio": "remotion studio src/index.ts",
+    "render": "bash scripts/render_chunks.sh",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "5.1.1",
+    "@react-three/fiber": "8.17.14",
+    "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "@remotion/three": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539",
+    "three": "0.172.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/three": "0.172.0",
+    "typescript": "5.6.3"
+  }
+}

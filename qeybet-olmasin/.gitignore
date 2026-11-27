@@ -1,0 +1,9 @@
+node_modules/
+out/raw.mp4
+out/stills/
+out/check/
+public/mix.wav
+*.log
+public/voice/
+public/freeze.jpg
+out/chunks/
