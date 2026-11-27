@@ -7,9 +7,11 @@ Bəhlul xəlifə Harun ər-Rəşidin boş taxtına oturur, keşikçilər onu dö
 
 - **Fayl:** `out/behlul-danende.mp4`
 - **Format:** 1080×1920 (9:16), 30 fps, H.264 `yuv420p`, `+faststart`, AAC, səs −15 LUFS
-- **Müddət:** ~76,9 san
+- **Müddət:** ~78,9 san
 - **Görüntü:** bütövlükdə kodla çəkilib: personajlar, saray, effektlər Remotion-da SVG ilə qurulub. AI krediti xərclənməyib.
-- **Səs:** istifadəçinin öz səsi (bir faylda yazılıb, `scripts/import_recording.py` cümlələrə bölür, təmizləyir və səviyyəsini bərabərləşdirir).
+- **Səs:** istifadəçinin öz yazısı (intonasiya və vaxtlar onundur), tembri Higgsfield `voice_change` ilə diktor səslərinə çevrilib:
+  rəvayətçi — Desmond, Bəhlul — Harrison, Harun — Gideon. Yazı `scripts/import_recording.py` ilə cümlələrə bölünür,
+  rollar üzrə yığılıb çevrilir, `scripts/split_roles.py` yenidən cümlələrə bölür (`audio/role_offsets.json`). Xərc: 10 kredit.
   Musiqi (hicaz məqamında ud-qaval, kədərli ney) və effektlər numpy ilə sintez olunub. İlk versiyada Meta MMS səsi idi (`scripts/make_voices.py` qalır).
 - Ekranda «RƏVAYƏT» yazılıb: bu, xalq arasında məşhur rəvayətin bədii təqdimatıdır.
 
