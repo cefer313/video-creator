@@ -202,10 +202,10 @@ const Icon: React.FC<{ name: 'x' | 'check' | 'mic' | 'chat' | 'eye' | 'shield' |
 // ---------- 3. Donma + "yanlış" ----------
 export const WrongStamp: React.FC<{ f: number }> = ({ f }) => {
   const z = TL.events.freeze;
-  if (f < z || f > z + 40) return null;
-  const s = sp(f, z + 2, 9);
+  if (f < z || f > z + 22) return null;
+  const s = sp(f, z + 1, 9);
   const flash = 1 - ramp(f, z, z + 5);
-  const out = 1 - ramp(f, z + 30, z + 40);
+  const out = 1 - ramp(f, z + 15, z + 22);
   return (
     <AbsoluteFill style={{ opacity: out }}>
       <AbsoluteFill style={{ background: `rgba(255,255,255,${0.75 * flash})` }} />
@@ -246,7 +246,7 @@ const at = (l: Line, frac: number) => l.start + Math.round((l.end - l.start) * f
 export const Explain: React.FC<{ f: number }> = ({ f }) => {
   const [x0, x1] = TL.parts.explain;
   if (f < x0 || f >= x1 + 2) return null;
-  const inA = ramp(f, x0 + 18, x0 + 30);
+  const inA = ramp(f, x0 + 13, x0 + 22);
   const outA = 1 - ramp(f, x1 - 6, x1 + 2);
   const n01 = L.n01;
   const n02 = L.n02;
