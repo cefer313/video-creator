@@ -1,0 +1,25 @@
+{
+  "name": "behlul-danende",
+  "version": "1.0.0",
+  "private": true,
+  "description": "«Bəhlul və xəlifənin taxtı» — 9:16 düz rəngli 2D animasiya Reels (Remotion, personajlar SVG ilə kodla çəkilib, AI kreditsiz)",
+  "scripts": {
+    "voices": "python3 scripts/make_voices.py",
+    "assets": "python3 scripts/timing.py && python3 scripts/make_audio.py",
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Behlul out/raw.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --browser-executable=$(ls -d /opt/pw-browsers/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell | head -1) && bash scripts/finalize.sh",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "5.1.1",
+    "@remotion/cli": "4.0.539",
+    "@remotion/renderer": "4.0.539",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.539"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

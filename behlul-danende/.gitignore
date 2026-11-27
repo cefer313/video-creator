@@ -1,0 +1,6 @@
+node_modules/
+public/voice/
+public/mix.wav
+out/raw.mp4
+out/stills/
+out/check/
