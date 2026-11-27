@@ -7,3 +7,4 @@ public/voice/
 public/mix.wav
 *.log
 __pycache__/
+out/check2/
