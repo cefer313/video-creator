@@ -7,22 +7,22 @@ Bəhlul xəlifə Harun ər-Rəşidin boş taxtına oturur, keşikçilər onu dö
 
 - **Fayl:** `out/behlul-danende.mp4`
 - **Format:** 1080×1920 (9:16), 30 fps, H.264 `yuv420p`, `+faststart`, AAC, səs −15 LUFS
-- **Müddət:** ~62,8 san
+- **Müddət:** ~76,9 san
 - **Görüntü:** bütövlükdə kodla çəkilib: personajlar, saray, effektlər Remotion-da SVG ilə qurulub. AI krediti xərclənməyib.
-- **Səs:** Meta MMS açıq səs modeli (`facebook/mms-tts-azj-script_latin`, lisenziya CC BY-NC 4.0). Model bir səslidir:
-  rəvayətçi, Bəhlul və Harun tembr və sürətlə fərqləndirilib. Musiqi (hicaz məqamında ud-qaval, kədərli ney) və effektlər numpy ilə sintez olunub.
+- **Səs:** istifadəçinin öz səsi (bir faylda yazılıb, `scripts/import_recording.py` cümlələrə bölür, təmizləyir və səviyyəsini bərabərləşdirir).
+  Musiqi (hicaz məqamında ud-qaval, kədərli ney) və effektlər numpy ilə sintez olunub. İlk versiyada Meta MMS səsi idi (`scripts/make_voices.py` qalır).
 - Ekranda «RƏVAYƏT» yazılıb: bu, xalq arasında məşhur rəvayətin bədii təqdimatıdır.
 
 ## Hissələr
 
-| Vaxt | Hissə |
-|---|---|
-| 0–3,5 san | Hook: boş, parlayan taxt — «Xəlifənin taxtında bircə an oturmaq istərdinmi?» |
-| 3,5–18,5 san | Bəhlul çubuq atla saraya gəlir, lövhə yanır, taxta tullanıb rahatca oturur |
-| 18,5–24,5 san | Keşikçilər girir, cizgi filmi davası (toz buludu), Bəhlul yerə düşür |
-| 24,5–31 san | Bəhlul ağlayır, Harun gəlir |
-| 31–52,4 san | Dialoq: «Sənə ağlayıram», tərəzi — hesab günü, Harunun gözləri dolur |
-| 52,4–62,8 san | Nəticə: taxt, vəzifə, var-dövlət kartları qum kimi tökülür; «Bəyəndinsə, dostunla paylaş» |
+1. Hook: boş, parlayan taxt — «Xəlifənin taxtında bircə an oturmaq istərdinmi?»
+2. Bəhlul çubuq atla saraya gəlir, lövhə yanır, taxta tullanıb rahatca oturur.
+3. Keşikçilər girir, cizgi filmi davası (toz buludu), Bəhlul yerə düşür.
+4. Bəhlul ağlayır, Harun gəlir.
+5. Dialoq: «Sənə ağlayıram», tərəzi — hesab günü, Harunun gözləri dolur.
+6. Nəticə: taxt, vəzifə, var-dövlət kartları qum kimi tökülür; «Bəyəndinsə, dostunla paylaş».
+
+Vaxtlar diktor səsinin uzunluğuna görə avtomatik hesablanır (`src/timeline.json`).
 
 ## Fayllar
 
@@ -35,7 +35,8 @@ Bəhlul xəlifə Harun ər-Rəşidin boş taxtına oturur, keşikçilər onu dö
 
 ## Öz səsinizlə əvəz etmək
 
-`public/voice/` qovluğuna `l00.wav` … `l16.wav` (48 kHz mono, sıra `src/script.json`-dakı kimi) qoyun və bu əmri işlədin:
+Bütün cümlələr bir faylda (hər cümlədən əvvəl nömrəsi deyilib): kəsmə vaxtlarını `audio/recording_cuts.json`-a yazın və
+`python3 scripts/import_recording.py <fayl.m4a>` işlədin. Və ya `public/voice/` qovluğuna `l00.wav` … `l16.wav` (48 kHz mono, sıra `src/script.json`-dakı kimi) qoyun və bu əmri işlədin:
 
 ```bash
 npm run assets && npm run render
@@ -47,7 +48,7 @@ Vaxtlar, altyazılar və dodaq hərəkəti yeni səsə görə özü uyğunlaşı
 
 ```bash
 npm install
-MMS_DIR=~/models/mms-tts-azj python3 scripts/make_voices.py   # torch + transformers lazımdır
+python3 scripts/import_recording.py <yazı.m4a>   # və ya MMS: MMS_DIR=~/models/mms-tts-azj python3 scripts/make_voices.py
 npm run assets   # src/timeline.json + public/mix.wav
 npm run render   # out/behlul-danende.mp4
 ```
