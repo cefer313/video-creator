@@ -7,7 +7,7 @@ Bəhlul xəlifə Harun ər-Rəşidin boş taxtına oturur, keşikçilər onu dö
 
 - **Fayl:** `out/behlul-danende.mp4`
 - **Format:** 1080×1920 (9:16), 30 fps, H.264 `yuv420p`, `+faststart`, AAC, səs −15 LUFS
-- **Müddət:** ~65,4 san
+- **Müddət:** ~69,8 san
 - **Görüntü:** bütövlükdə kodla çəkilib: personajlar, saray, effektlər Remotion-da SVG ilə qurulub. AI krediti xərclənməyib.
 - **Səs:** ElevenLabs (`text2speech_v2`, Higgsfield vasitəsilə): rəvayətçi — Desmond, Bəhlul — Harrison, Harun — Gideon.
   `scripts/fetch_elevenlabs.sh` faylları `audio/elevenlabs_files.txt`-dən endirir. Xərc: ~3,3 kredit.
@@ -22,7 +22,7 @@ Bəhlul xəlifə Harun ər-Rəşidin boş taxtına oturur, keşikçilər onu dö
 3. Keşikçilər girir, cizgi filmi davası (toz buludu), Bəhlul yerə düşür.
 4. Bəhlul ağlayır, Harun gəlir.
 5. Dialoq: «Sənə ağlayıram», tərəzi — hesab günü, Harunun gözləri dolur.
-6. Nəticə: taxt, vəzifə, var-dövlət kartları qum kimi tökülür; «Bəyəndinsə, dostunla paylaş».
+6. Nəticə: taxt, vəzifə, var-dövlət kartları qum kimi tökülür; sonda maddi dəstək çağırışı və «Bizə dəstək ol» düyməsi (ödəniş məlumatı verilmədiyi üçün göstərilmir).
 
 Vaxtlar diktor səsinin uzunluğuna görə avtomatik hesablanır (`src/timeline.json`).
 

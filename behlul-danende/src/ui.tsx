@@ -106,21 +106,17 @@ export const Banner: React.FC<{ text: string; t: number; top?: number }> = ({ te
   </div>
 );
 
-/** Ağ CTA düyməsi: paylaşma ikonu + iki sətir. */
+/** Ağ CTA düyməsi: ürək ikonu + iki sətir (maddi dəstək çağırışı; ödəniş məlumatı verilmədiyi üçün göstərilmir). */
 export const CtaPill: React.FC<{ t: number; top?: number }> = ({ t, top = 340 }) => (
   <div style={{ position: 'absolute', top, left: 0, right: 0, display: 'flex', justifyContent: 'center' }}>
     <div style={{ transform: `scale(${popS(t)})`, background: '#FFFFFF', border: `7px solid ${INK}`, borderRadius: 80, padding: '20px 54px 20px 22px', display: 'flex', alignItems: 'center', gap: 26, boxShadow: `0 10px 0 ${INK}` }}>
       <svg width={96} height={96} viewBox="0 0 96 96">
-        <circle cx={48} cy={48} r={48} fill="#2AA3E0" />
-        <circle cx={32} cy={50} r={9} fill="#fff" />
-        <circle cx={64} cy={32} r={9} fill="#fff" />
-        <circle cx={64} cy={68} r={9} fill="#fff" />
-        <line x1={32} y1={50} x2={64} y2={32} stroke="#fff" strokeWidth={6} />
-        <line x1={32} y1={50} x2={64} y2={68} stroke="#fff" strokeWidth={6} />
+        <circle cx={48} cy={48} r={48} fill="#C13A2B" />
+        <path d="M 48 72 C 20 54 22 30 36 28 C 43 27 47 32 48 36 C 49 32 53 27 60 28 C 74 30 76 54 48 72 Z" fill="#FFFFFF" />
       </svg>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 46, color: INK, lineHeight: 1.1 }}>Bəyəndinsə</div>
-        <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 36, color: '#FF8C5A', lineHeight: 1.15 }}>dostunla paylaş</div>
+        <div style={{ fontFamily: FONT, fontWeight: 900, fontSize: 46, color: INK, lineHeight: 1.1 }}>Bizə dəstək ol</div>
+        <div style={{ fontFamily: FONT, fontWeight: 800, fontSize: 34, color: '#FF8C5A', lineHeight: 1.15 }}>daha yaxşı videolar üçün</div>
       </div>
     </div>
   </div>

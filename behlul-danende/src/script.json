@@ -1,22 +1,124 @@
 {
   "_info": "Ssenari. text: ekrandakı altyazı (*söz* = sarı vurğu, _söz_ = narıncı vurğu). tts: səsləndirmə üçün yazılış (yoxdursa text). pre/post: səsdən əvvəl/sonra fasilə (san). who: narr | behlul | harun.",
   "lines": [
-    { "id": "l00", "who": "narr",   "pre": 0.5,  "post": 0.4, "text": "Xəlifənin *taxtında* bircə an oturmaq _istərdinmi?_" },
-    { "id": "l01", "who": "narr",   "pre": 0.2,  "post": 0.4, "text": "Bir gün *Bəhlul Danəndə* Harun ər-Rəşidin _sarayına_ gəldi." },
-    { "id": "l02", "who": "narr",   "pre": 0.2,  "post": 0.3, "text": "Baxdı ki, taxt *boşdur*. Nə xəlifə var, nə də _keşikçi_." },
-    { "id": "l03", "who": "behlul", "pre": 0.2,  "post": 0.4, "text": "Hə... Bir oturum görüm, *xəlifə olmaq* necə _şeydir!_" },
-    { "id": "l04", "who": "narr",   "pre": 0.3,  "post": 0.6, "text": "Taxta çıxdı, yastığa söykənib *rahatca* _oturdu._" },
-    { "id": "l05", "who": "narr",   "pre": 0.1,  "post": 0.2, "text": "Elə bu an *keşikçilər* _içəri girdi!_" },
-    { "id": "l06", "who": "narr",   "pre": 0.1,  "post": 1.0, "text": "Onu taxtdan dartıb saldılar, *yaxşıca da* _döydülər._" },
-    { "id": "l07", "who": "narr",   "pre": 0.3,  "post": 0.5, "text": "Bəhlul bir küncdə oturub *hönkür-hönkür* _ağladı._" },
-    { "id": "l08", "who": "narr",   "pre": 0.2,  "post": 0.4, "text": "Səs-küyə *Harun* özü _gəldi._" },
-    { "id": "l09", "who": "harun",  "pre": 0.2,  "post": 0.4, "text": "Bəhlul, niyə *ağlayırsan?* Bu qədər _ağrıdı?_" },
-    { "id": "l10", "who": "behlul", "pre": 0.2,  "post": 0.3, "text": "Yox, xəlifə. Mən özümə yox, *sənə* _ağlayıram._" },
-    { "id": "l11", "who": "harun",  "pre": 0.1,  "post": 0.5, "text": "*Mənə?!*" },
-    { "id": "l12", "who": "behlul", "pre": 0.2,  "post": 0.3, "text": "Mən bu taxtda *bircə an* oturdum, bu qədər _zərbə yedim._" },
-    { "id": "l13", "who": "behlul", "pre": 0.2,  "post": 0.6, "text": "Sən isə *ömrün boyu* bu taxtdasan. Görəsən, _hesab günü_ sənin halın necə olacaq?" },
-    { "id": "l14", "who": "narr",   "pre": 0.3,  "post": 0.9, "text": "Harun *susdu.* Gözləri _yaşla doldu._" },
-    { "id": "l15", "who": "narr",   "pre": 0.3,  "post": 0.7, "text": "Taxt da, vəzifə də, var-dövlət də *bir anlıqdır.* Hesabı isə _qalır._" },
-    { "id": "l16", "who": "narr",   "pre": 0.2,  "post": 2.2, "text": "Bəyəndinsə, *dostunla* _paylaş._" }
+    {
+      "id": "l00",
+      "who": "narr",
+      "pre": 0.5,
+      "post": 0.4,
+      "text": "Xəlifənin *taxtında* bircə an oturmaq _istərdinmi?_"
+    },
+    {
+      "id": "l01",
+      "who": "narr",
+      "pre": 0.2,
+      "post": 0.4,
+      "text": "Bir gün *Bəhlul Danəndə* Harun ər-Rəşidin _sarayına_ gəldi."
+    },
+    {
+      "id": "l02",
+      "who": "narr",
+      "pre": 0.2,
+      "post": 0.3,
+      "text": "Baxdı ki, taxt *boşdur*. Nə xəlifə var, nə də _keşikçi_."
+    },
+    {
+      "id": "l03",
+      "who": "behlul",
+      "pre": 0.2,
+      "post": 0.4,
+      "text": "Hə... Bir oturum görüm, *xəlifə olmaq* necə _şeydir!_"
+    },
+    {
+      "id": "l04",
+      "who": "narr",
+      "pre": 0.3,
+      "post": 0.6,
+      "text": "Taxta çıxdı, yastığa söykənib *rahatca* _oturdu._"
+    },
+    {
+      "id": "l05",
+      "who": "narr",
+      "pre": 0.1,
+      "post": 0.2,
+      "text": "Elə bu an *keşikçilər* _içəri girdi!_"
+    },
+    {
+      "id": "l06",
+      "who": "narr",
+      "pre": 0.1,
+      "post": 1.0,
+      "text": "Onu taxtdan dartıb saldılar, *yaxşıca da* _döydülər._"
+    },
+    {
+      "id": "l07",
+      "who": "narr",
+      "pre": 0.3,
+      "post": 0.5,
+      "text": "Bəhlul bir küncdə oturub *hönkür-hönkür* _ağladı._"
+    },
+    {
+      "id": "l08",
+      "who": "narr",
+      "pre": 0.2,
+      "post": 0.4,
+      "text": "Səs-küyə *Harun* özü _gəldi._"
+    },
+    {
+      "id": "l09",
+      "who": "harun",
+      "pre": 0.2,
+      "post": 0.4,
+      "text": "Bəhlul, niyə *ağlayırsan?* Bu qədər _ağrıdı?_"
+    },
+    {
+      "id": "l10",
+      "who": "behlul",
+      "pre": 0.2,
+      "post": 0.3,
+      "text": "Yox, xəlifə. Mən özümə yox, *sənə* _ağlayıram._"
+    },
+    {
+      "id": "l11",
+      "who": "harun",
+      "pre": 0.1,
+      "post": 0.5,
+      "text": "*Mənə?!*"
+    },
+    {
+      "id": "l12",
+      "who": "behlul",
+      "pre": 0.2,
+      "post": 0.3,
+      "text": "Mən bu taxtda *bircə an* oturdum, bu qədər _zərbə yedim._"
+    },
+    {
+      "id": "l13",
+      "who": "behlul",
+      "pre": 0.2,
+      "post": 0.6,
+      "text": "Sən isə *ömrün boyu* bu taxtdasan. Görəsən, _hesab günü_ sənin halın necə olacaq?"
+    },
+    {
+      "id": "l14",
+      "who": "narr",
+      "pre": 0.3,
+      "post": 0.9,
+      "text": "Harun *susdu.* Gözləri _yaşla doldu._"
+    },
+    {
+      "id": "l15",
+      "who": "narr",
+      "pre": 0.3,
+      "post": 0.7,
+      "text": "Taxt da, vəzifə də, var-dövlət də *bir anlıqdır.* Hesabı isə _qalır._"
+    },
+    {
+      "id": "l16",
+      "who": "narr",
+      "pre": 0.2,
+      "post": 2.0,
+      "text": "Əgər belə videoların və *bundan daha yaxşı* videoların olmasını istəyirsənsə, _maddi dəstəyinlə_ bizə köməklik elə."
+    }
   ]
 }
